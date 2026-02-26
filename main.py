@@ -1,5 +1,4 @@
-from data import load_dishes
-from list_CRUD import *
+from file_CRUD import *
 
 dishes = load_dishes()
 id_counter = 3

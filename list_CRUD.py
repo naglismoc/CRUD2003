@@ -1,3 +1,6 @@
+from data import load_data
+
+
 def print_info():
     print("-------------------------")
     print("1. Atvaizduoti patiekalus.")
@@ -6,6 +9,9 @@ def print_info():
     print("4. Trinti patiekalą.")
     print("5. Išeiti iš programos.")
     print("-------------------------")
+
+def load_dishes():
+    return load_data()
 
 def print_dishes(dishes):
     for dish in dishes:
@@ -19,7 +25,7 @@ def delete_dish(dishes):
         if dish['id'] == del_id:
             dishes.remove(dish)
             print("Patiekalas sėkmingai ištrintas")
-            break
+            return
 
 def edit_dish(dishes):
     print('Įrašykite id patiekalo kurį norite redaguoti')

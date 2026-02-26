@@ -1,4 +1,4 @@
-def load_dishes():
+def load_data():
     return [
     {'id':1,
     "title":"bulviniai blynai",
