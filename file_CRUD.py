@@ -4,6 +4,7 @@ headers = ['id','title','origin','price','ingredients']
 def load_dishes():
     with open("./dishes.csv", mode="r", encoding="utf-8") as file:
         return list(csv.DictReader(file))
+
 def save_dishes(dishes):
     with open('./dishes.csv',mode='w',newline='',encoding="utf-8") as file:
         writer = csv.DictWriter(file,fieldnames=headers)
